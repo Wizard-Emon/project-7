@@ -46,7 +46,7 @@ display: block;
 }header .navBar .mainMenu ul li a:hover{
 color: rgba(250, 244, 244, 0.604);
 }
-header .heading { background-image: url('/images/1.jpg');
+header .heading { background-image: url('images/1.jpg');
 height: 730px;width: 100%;
 margin: 0 auto;
 background-repeat: no-repeat;
@@ -124,7 +124,7 @@ background: #F0F0E8;
 /* background-color: gray; */
 } #main-section #services .left{
 width: 50%;
-background: url('/images/2.jpg');
+background: url('images/2.jpg');
 height: 730px;
 background-repeat: no-repeat;
 background-size: cover;

@@ -1,0 +1,374 @@
+*{margin:0;padding:0; }
+body {  font-family: 'Roboto', sans-serif;font-weight: 600; color:#fff}
+html{scroll-behavior: smooth;}
+header{
+height: 790px;width: 100%;
+margin: 0 auto;
+background-repeat: no-repeat;
+background-size:  cover;
+background-position: center;
+}
+header .navBar{height:60px ;
+width: 100%;
+background-color:#02918c ; 
+display: flex;
+position: fixed;
+z-index: 10;
+}
+header .navBar .logo{
+text-transform: uppercase; 
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:1000; 
+width: 15%;
+text-align: center;
+line-height: 55px;
+font-size: 25px;
+}header .navBar .mainMenu{
+position:absolute;
+width:85%;
+background: red;
+left: 15%;
+font-size: 12px;
+}
+header .navBar .mainMenu ul { 
+display: flex; 
+justify-content: space-around;
+width: 580px;
+position: absolute;
+right:0 ; 
+}
+header .navBar .mainMenu ul li{ list-style: none;}
+header .navBar .mainMenu ul li a{
+color:#fff;
+text-decoration: none;
+text-transform: uppercase;
+padding: 20px 0px ;
+display: block;
+}header .navBar .mainMenu ul li a:hover{
+color: rgba(250, 244, 244, 0.604);
+}
+header .heading { background-image: url('/images/1.jpg');
+height: 730px;width: 100%;
+margin: 0 auto;
+background-repeat: no-repeat;
+background-size:  cover;
+background-position: center;}header .heading .content
+{
+height: 330px;
+width: 1100px;
+margin: 0 auto;
+/* border: 1px solid; */
+padding: 200px 0px;
+text-align: center;
+}header .heading .content .char{transform: rotate(
+270deg
+);
+height: 100px;
+    width: 100px;
+    margin-left: 485px;
+font-size: 100px;
+font-weight: 100;
+margin-top: 10px;font-family: 'Roboto', sans-serif;
+}header .heading .content .btn {
+padding: 15px 35px;
+font-size: 15px;
+text-transform: uppercase;
+font-weight: 900;
+letter-spacing: 2px;
+border: none;
+background: #CFC91D;
+margin-top: 16px;
+}
+header .heading .content .btn:hover{background-color: rgb(51, 42, 42);color: rgb(209, 185, 185); transition: .5s;}
+#main-section{color:#000; }
+#main-section .about {
+/* background-color: grey; */
+text-align: center;
+padding: 80px;
+}
+#main-section .about .boxContent{
+width: 1100px;
+/* background-color: red; */
+text-align: center;
+display: flex;
+color:#7E8287;
+margin: 0 auto;
+padding: 40px;
+}  #main-section .about .boxContent .box{
+width:250px;
+border-right: 1px solid #D9DBDB;
+padding: 50px;
+}
+#main-section .about .boxContent .box:hover{box-shadow: 8px 20px 45px rgba(0, 0, 0, 0.5); transition: .5s;}
+#main-section .about .boxContent .box h3{
+padding: 15px;
+font-size: 16px;
+}  #main-section .about .boxContent .box p{    font-size: 11px;
+font-weight: 400;
+line-height: 19px;
+padding: 5px;
+color:#7e8287c2;
+}#main-section .about .boxContent .box i
+{
+font-size: 40px;
+color:#02918cb8;
+}
+/* third section starts here */
+#main-section #services {
+width:100%;
+display: flex;
+/* background-color: red; */
+} #main-section #services .right {
+width: 50%;
+padding: 80px 0px 0px 120px;
+background: #F0F0E8;
+/* background-color: gray; */
+} #main-section #services .left{
+width: 50%;
+background: url('/images/2.jpg');
+height: 730px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+/* service section */
+#main-section #services .right .boxContent{
+width: 100%;
+/* background-color: red; */
+text-align: center;
+/* display: flex; */
+color:#7E8287;
+margin: 0 auto;
+text-align: left;
+/* padding: 40px; */
+}  #main-section #services .boxContent .box{
+width:300px;
+/* border-right: 1px solid #D9DBDB; */
+/* padding: 50px; */
+float: left;
+padding: 25px 0px 0px 0px;
+}
+#main-section #services .boxContent .box h3{
+padding: 15px 15px 15px 0px;
+font-size: 16px;
+}  #main-section #services .boxContent .box p{    font-size: 11px;
+font-weight: 400;
+line-height: 19px;
+padding: 5px;
+color:#7e8287c2;
+width: 170px;
+}#main-section #services .boxContent .box i
+{
+font-size: 40px;
+color:#02918cb8;
+}
+/* my work */
+.myWork{
+padding:80px 0px;
+text-align: center;
+}
+.middle{ padding:80px 0px 80px 0px; width: 100%;}
+.middle .img {
+width: 25%;
+height:280px;
+margin: 0;
+padding: 0;
+float: left;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}  
+
+
+.middle .img::before{
+
+
+
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(207, 194, 205, 0.938);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+
+.middle .img:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.7);
+  
+  }
+
+
+  .middle .img .hover{
+
+
+        /* height: 100%; */
+        /* width: 100%; */
+        /* background: #130e0e; */
+        text-align: center;
+        padding: 90px;
+        color: rgba(255, 255, 255, 0.616);
+    
+
+
+  }
+
+ .middle .img .hover  {
+    position: absolute;
+   
+    font-size: 3em;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .middle .img .hover h2 { 
+    /* position: absolute; */
+   
+    /* font-size: 3em; */
+    z-index: 1;
+    /* opacity: 0; */
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .middle .img .hover p{ 
+    /* position: absolute; */
+   
+    /* font-size: 3em; */
+    z-index: 1;
+    /* opacity: 0; */
+    transition: 0.5s;
+    font-weight: 300;
+    font-size: 14px;
+  
+  }
+  .middle .img:hover .hover { 
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-30px);
+  }
+
+  .middle .img .hoverE  {
+    position: absolute;
+    text-align: center;
+        padding: 70px 0px 75px 0px;
+        color: rgb(255, 255, 255);
+        background-color: #02918c8f;
+top:20px;
+left: 20px;
+width: 90%;
+ 
+/*  
+    font-size: 3em;
+    z-index: 1;
+    opacity: 1;
+    transition: 0.5s; */
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .middle .img .hoverE h2 { 
+    /* position: absolute; */
+   
+    /* font-size: 3em; */
+    z-index: 1;
+    /* opacity: 0; */
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+  }
+
+
+
+  .middle .img .hoverE p{ 
+    /* position: absolute; */
+   width: 300px;
+    /* font-size: 3em; */
+    z-index: 1;
+    /* opacity: 0; */
+    transition: 0.5s;
+    font-weight: 300;
+    font-size: 14px;
+  
+  }
+
+
+
+
+
+
+
+
+footer{text-align: center; padding: 80px 0px 0px 0px; position: relative;margin-top: 300px; width: 100%;}
+.bottom{padding:80px;}
+footer .formFill{
+background-color:  rgb(6 0 0 / 95%);
+width: 100%;
+height: 650px;
+}
+footer .formFill .form { 
+width: 100%; height: 570px;background-color: rgb(14, 10, 10);
+}
+footer .formFill .form .formF{
+width: 1100px;
+/* background: chocolate; */
+margin: 0 auto;
+height: 570px;
+}
+footer .formFill .form .formF label {
+position: absolute;
+left: 50%;
+/* top: 2%; */
+text-transform: uppercase;
+font-weight: 400;
+z-index: 3; 
+display: none;
+}
+footer .formFill .form .formF input{    width: 60%;
+position: relative;
+padding: 70px 0px 15px 0px;
+background: none;
+border: none;
+outline: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+z-index: 1;
+}
+footer .formFill .form .formF input:hover{color: #fff; text-align: center; outline: none;  transition: .5s;}
+footer .formFill .form .formF .textarea{ 
+width: 80%;
+padding: 70px 0px 15px 0px ;
+background: none;
+border: none;
+outline: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+z-index: 1;}
+::placeholder{ text-align: center;
+text-transform: uppercase;
+font-weight: 400;
+color: 1px solid rgba(255, 255, 255, 0.46);
+font-size: 15px;
+}
+footer .formFill .form .btn {
+    padding: 15px 55px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: none;
+    background: #CFC91D;
+    margin-top: 66px;
+    }
+    footer .formFill .form .btn:hover{background-color: rgb(51, 42, 42);color: rgb(209, 185, 185); transition: .5s;}
+footer .formFill .end {  width: 100%; height: 80px;background-color: #000;}
